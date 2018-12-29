@@ -202,7 +202,7 @@ public class ClientUI extends JFrame {
         // ==== 初始化登陆面板
         loginPanel = new JPanel();
        
-        loginPanel.setBackground(Color.decode("0xee0000")); // 登录框背景颜色
+        loginPanel.setBackground(Color.decode("0xd08cd9")); // 登录框背景颜色
         // loginPanel.setLayout(new BorderLayout());
         // label.setPreferredSize(new Dimension(0,50));
         loginPanel.setLayout(null);
@@ -413,7 +413,7 @@ public class ClientUI extends JFrame {
     //添加猜面板的函数
     private void addGuessPanel() {
         addDrawPanel();
-        // drawPanel.remove(drawLeftPanel);
+        // drawPanel.remove(colorPanel);
         sendButton.setEnabled(true);
     }
     public void Draw(int x1,int x2,int y1,int y2){

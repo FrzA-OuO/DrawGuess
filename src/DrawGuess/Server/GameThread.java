@@ -55,10 +55,10 @@ public class GameThread {
                     // 给客户端发一个包表明游戏结束 返回待准备状态
                     try {
                         ServerSender.sendMessage(new Bag("Server", "STOPGAME", 3));
-                        try{sleep(500);}catch(InterruptedException e){}
+                        sleep(1000);
                     } catch (IOException e) {
                         System.out.println("Send Exception");
-                    }
+                    } catch(InterruptedException e){}
                     cancel();
                 }
 
